@@ -15,7 +15,7 @@ pipeline {
             steps {
                 echo "============= started packaging ============="
                // sh 'mvn clean package -DskipTests=true'
-                bash 'mvn clean package -DskipTests=true'
+                'mvn clean package -DskipTests=true'
             }
         }
     }
