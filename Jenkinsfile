@@ -14,7 +14,8 @@ pipeline {
         stage("Package") {
             steps {
                 echo "============= started packaging ============="
-                sh 'mvn clean package -DskipTests=true'
+               // sh 'mvn clean package -DskipTests=true'
+                start 'mvn clean package -DskipTests=true'
             }
         }
     }
